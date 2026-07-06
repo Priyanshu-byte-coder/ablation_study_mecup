@@ -1,0 +1,62 @@
+[
+  {
+    "variant": "A1_fresh_local",
+    "description": "Full model trained from scratch on local dataset (3-scale baseline)",
+    "metrics": {
+      "mean_iou": 0.45189398527145386,
+      "mean_dice": 0.6868851780891418,
+      "pixel_accuracy": 0.738198085739236,
+      "iou_Background": 0.6621571183204651,
+      "dice_Background": 0.7756035923957825,
+      "iou_Dust": 0.5772685408592224,
+      "dice_Dust": 0.7135583162307739,
+      "iou_RunDown": 0.26549002528190613,
+      "dice_RunDown": 0.8289932012557983,
+      "iou_Scratch": 0.30266016721725464,
+      "dice_Scratch": 0.42938539385795593,
+      "avg_inference_ms": 56.89492623011271,
+      "checkpoint_epoch": 12,
+      "num_samples": 57
+    }
+  },
+  {
+    "variant": "A2_single_scale_fixed",
+    "description": "Single-scale: only deep layer [11]; shallow+mid filled with zeros",
+    "metrics": {
+      "mean_iou": 0.4436447024345398,
+      "mean_dice": 0.6682279706001282,
+      "pixel_accuracy": 0.7517812976561199,
+      "iou_Background": 0.680097758769989,
+      "dice_Background": 0.7908554077148438,
+      "iou_Dust": 0.5881397128105164,
+      "dice_Dust": 0.7227103114128113,
+      "iou_RunDown": 0.17894960939884186,
+      "dice_RunDown": 0.6954463720321655,
+      "iou_Scratch": 0.32739171385765076,
+      "dice_Scratch": 0.4638998806476593,
+      "avg_inference_ms": 54.98518943786621,
+      "checkpoint_epoch": 11,
+      "num_samples": 57
+    }
+  },
+  {
+    "variant": "A3_two_scale_fixed",
+    "description": "Two-scale: mid+deep [7,11]; shallow filled with zeros",
+    "metrics": {
+      "mean_iou": 0.4595324397087097,
+      "mean_dice": 0.6952232122421265,
+      "pixel_accuracy": 0.7428307411542526,
+      "iou_Background": 0.6654649376869202,
+      "dice_Background": 0.7750241756439209,
+      "iou_Dust": 0.5782599449157715,
+      "dice_Dust": 0.7153297662734985,
+      "iou_RunDown": 0.26786893606185913,
+      "dice_RunDown": 0.8261133432388306,
+      "iou_Scratch": 0.3265359699726105,
+      "dice_Scratch": 0.46442553400993347,
+      "avg_inference_ms": 53.7892500559489,
+      "checkpoint_epoch": 10,
+      "num_samples": 57
+    }
+  }
+]

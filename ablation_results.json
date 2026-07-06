@@ -1,0 +1,94 @@
+[
+  {
+    "variant": "A1_full_model",
+    "description": "Full model \u2014 DINOv2-ViT-B/14 + DenseFPN-UNet (3-scale) + combined loss",
+    "metrics": {
+      "mean_iou": 0.25256308913230896,
+      "mean_dice": 0.5708853602409363,
+      "pixel_accuracy": 0.6549149012571082,
+      "iou_Background": 0.6507939100265503,
+      "dice_Background": 0.7489794492721558,
+      "iou_Dust": 0.08690501004457474,
+      "dice_Dust": 0.2998221814632416,
+      "iou_RunDown": 0.01162227988243103,
+      "dice_RunDown": 0.7975991368293762,
+      "iou_Scratch": 0.2609311640262604,
+      "dice_Scratch": 0.4371407628059387,
+      "avg_inference_ms": 52.27749512113373,
+      "checkpoint_epoch": 68,
+      "num_samples": 114
+    }
+  },
+  {
+    "variant": "A2_single_scale",
+    "description": "Single-scale features (only deep layer [11], no FPN)",
+    "metrics": {},
+    "error": "'mid'"
+  },
+  {
+    "variant": "A3_two_scale",
+    "description": "Two-scale features ([7, 11], mid + deep)",
+    "metrics": {},
+    "error": "'deep'"
+  },
+  {
+    "variant": "A5_dice_only",
+    "description": "Loss: Dice only (no Focal loss)",
+    "metrics": {
+      "mean_iou": 0.4361059367656708,
+      "mean_dice": 0.698398232460022,
+      "pixel_accuracy": 0.8218934453947663,
+      "iou_Background": 0.7420737147331238,
+      "dice_Background": 0.8132184147834778,
+      "iou_Dust": 0.5383037328720093,
+      "dice_Dust": 0.7068504095077515,
+      "iou_RunDown": 0.1873469352722168,
+      "dice_RunDown": 0.8423618078231812,
+      "iou_Scratch": 0.276699423789978,
+      "dice_Scratch": 0.43116244673728943,
+      "avg_inference_ms": 49.85130449821209,
+      "checkpoint_epoch": 11,
+      "num_samples": 114
+    }
+  },
+  {
+    "variant": "A7_no_class_weights",
+    "description": "Uniform class weights [1, 1, 1, 1] (no class balancing)",
+    "metrics": {
+      "mean_iou": 0.45430585741996765,
+      "mean_dice": 0.7184438109397888,
+      "pixel_accuracy": 0.8341710872192482,
+      "iou_Background": 0.7551085948944092,
+      "dice_Background": 0.8173903226852417,
+      "iou_Dust": 0.5490100383758545,
+      "dice_Dust": 0.7111770510673523,
+      "iou_RunDown": 0.22158516943454742,
+      "dice_RunDown": 0.8539173603057861,
+      "iou_Scratch": 0.2915196716785431,
+      "dice_Scratch": 0.49129050970077515,
+      "avg_inference_ms": 54.52871117098578,
+      "checkpoint_epoch": 10,
+      "num_samples": 114
+    }
+  },
+  {
+    "variant": "A8_small_decoder",
+    "description": "Smaller decoder channels [128, 64, 32]",
+    "metrics": {
+      "mean_iou": 0.38733813166618347,
+      "mean_dice": 0.6038710474967957,
+      "pixel_accuracy": 0.7823809236123807,
+      "iou_Background": 0.6765791773796082,
+      "dice_Background": 0.7475412487983704,
+      "iou_Dust": 0.5239565372467041,
+      "dice_Dust": 0.689510703086853,
+      "iou_RunDown": 0.1011962816119194,
+      "dice_RunDown": 0.557110071182251,
+      "iou_Scratch": 0.24762050807476044,
+      "dice_Scratch": 0.42132216691970825,
+      "avg_inference_ms": 58.01349056178126,
+      "checkpoint_epoch": 12,
+      "num_samples": 114
+    }
+  }
+]

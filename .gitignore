@@ -1,0 +1,40 @@
+# Model weights
+checkpoints/
+*.pth
+*.bin
+*.xml
+*.onnx
+gdrive_tmp/
+
+# Dataset images (550MB — download separately, see README)
+data/data/
+
+# Results & logs
+result/
+ablation_log.txt
+ablation_scale_log.txt
+evaluation_results*/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
